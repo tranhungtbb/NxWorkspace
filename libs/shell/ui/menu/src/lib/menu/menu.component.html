@@ -1,0 +1,81 @@
+<div class="menu-header d-flex" [ngClass]="{ 'close' : !isExpanded}">
+    <div class="logo" [ngClass]="{ 'logo-cricle' : !isExpanded}" routerLink="/">
+      <img [src]="isExpanded ? 'assets/media/logo/logo.svg' : 'assets/media/logo/logo-1.svg'">
+    </div>
+    <div class="icon" (click)="onExpand()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1230_6792)">
+          <path d="M3 4H21V6H3V4ZM3 19H21V21H3V19ZM11 14H21V16H11V14ZM11 9H21V11H11V9ZM3 12.5L7 9V16L3 12.5Z"
+            fill="#AEB1B4" />
+        </g>
+        <defs>
+          <clipPath id="clip0_1230_6792">
+            <rect width="24" height="24" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  
+  <div class="d-flex align-items-center mb-7 avatar" [ngClass]="{ 'close' : !isExpanded}">
+    <div mat-card-avatar class="border-avatar">
+      <img src="assets/media/avatars/Ellipse 2.png" class="" alt="" />
+    </div>
+    <div class="flex-grow-1 d-inline-grid avatar-infomation" *ngIf="isExpanded">
+      <mat-card-title>Julia K.</mat-card-title>
+      <mat-card-subtitle>CC Manager</mat-card-subtitle>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <mat-accordion class="app-nav-accordion" [ngClass]="{ 'close' : !isExpanded}">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon mat-list-icon svgIcon="icon-cases"></mat-icon>
+        <h4 mat-line *ngIf="isExpanded">Dashboard</h4>
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <mat-list-item>
+          <div class="d-flex">
+            <mat-icon>fiber_manual_record</mat-icon>
+            <h4 mat-line *ngIf="isExpanded">Map only view</h4>
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <div class="d-flex">
+            <mat-icon>fiber_manual_record</mat-icon>
+            <h4 mat-line *ngIf="isExpanded">List of cases</h4>
+          </div>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-expansion-panel>
+  
+    <mat-nav-list>
+      <mat-list-item routerLink="/case-active">
+        <mat-icon mat-list-icon svgIcon="icon-cases"></mat-icon>
+        <h4 mat-line *ngIf="isExpanded">Active Cases</h4>
+      </mat-list-item>
+  
+      <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="icon-cases"></mat-icon>
+        <h4 mat-line *ngIf="isExpanded">Case History</h4>
+      </mat-list-item>
+  
+      <mat-list-item routerLink="/client">
+        <mat-icon mat-list-icon svgIcon="icon-client"></mat-icon>
+        <h4 mat-line *ngIf="isExpanded">Clients</h4>
+      </mat-list-item>
+  
+      <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="icon-staff"></mat-icon>
+        <h4 mat-line *ngIf="isExpanded">Staff</h4>
+      </mat-list-item>
+  
+      <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="icon-logout"></mat-icon>
+        <h4 mat-line *ngIf="isExpanded">Log out</h4>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-accordion>
+  

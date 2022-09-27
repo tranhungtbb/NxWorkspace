@@ -1,0 +1,62 @@
+.mat-card.mat-card.mat-focus-indicator {
+    background: var(--on-text-primary-2);
+    box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+
+    .item-center {
+        flex: 1 1 0;
+    }
+
+    p {
+        margin: 0 !important;
+    }
+}
+
+
+.mat-card-header.mat-card-header {
+    padding: 19px;
+    padding-bottom: 8px;
+
+    .mat-card-header-text {
+        margin: 0;
+    }
+}
+
+
+
+mat-card.mat-card.relationships {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .mat-card-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mat-card-content {
+        .item-avatar {
+            margin-bottom: 16px;
+
+            .mat-card-avatar {
+                margin-left: 0px;
+            }
+
+            .p {
+                margin-bottom: 8px;
+            }
+
+        }
+
+        .item-info {
+            margin-bottom: 32px;
+
+            .p_1 {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .text-arrow {
+        margin-bottom: 32px;
+    }
+}

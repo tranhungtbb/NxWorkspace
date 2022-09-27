@@ -1,0 +1,94 @@
+@for $i from 0 through 5 {
+    .flex-#{$i} {
+        flex: #{$i};
+    }
+}
+
+@for $i from 0 through 50 {
+    .line-height-#{$i} {
+        line-height: #{$i};
+    }
+
+    .mw-#{$i} {
+        max-width: $i * 8px !important;
+    }
+
+    .mh-#{$i} {
+        max-height: $i * 8px !important;
+    }
+}
+
+
+@for $i from 0 through 200 {
+    .top-#{$i} {
+        top: #{$i}px;
+    }
+
+    .left-#{$i} {
+        left: #{$i}px;
+    }
+
+    .right-#{$i} {
+        right: #{$i}px;
+    }
+
+    .bottom-#{$i} {
+        bottom: #{$i}px;
+    }
+
+    .padding-left-#{$i} {
+        padding-left: $i * 8px !important;
+    }
+
+    .padding-right-#{$i} {
+        padding-right: $i * 8px !important;
+    }
+
+    .padding-top-#{$i} {
+        padding-top: $i * 8px !important;
+    }
+
+    .padding-bottom-#{$i} {
+        padding-bottom: $i * 8px !important;
+    }
+
+    //@at-root
+
+    .margin-left-#{$i} {
+        margin-left: $i * 8px !important;
+    }
+
+    .margin-right-#{$i} {
+        margin-right: $i * 8px !important;
+    }
+
+    .margin-top-#{$i} {
+        margin-top: $i * 8px !important;
+    }
+
+    .margin-bottom-#{$i} {
+        margin-bottom: $i * 8px !important;
+    }
+
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+
+@for $i from 1 through 9 {
+    .font-weight-#{$i}00 {
+        font-weight: #{$i}00 !important;
+    }
+}
+
+
+@for $i from 0 through 100 {
+    .w-per-#{$i} {
+        width: #{$i}#{"%"};
+    }
+
+    .h-per-#{$i} {
+        height: #{$i}#{"%"};
+    }
+}

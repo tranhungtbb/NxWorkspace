@@ -1,0 +1,205 @@
+.btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 2px 20px;
+    border-radius: 6px;
+    height: 32px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+//btn size 
+
+.btn-20 {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.btn-27 {
+    width: 27px !important;
+    height: 27px !important;
+}
+
+.btn-in-row {
+    width: auto !important;
+    height: auto !important;
+    box-shadow: none;
+}
+
+// end size
+
+.btn-default {
+    background: var(--on-text-primary-2);
+    border: 1px solid var(--on-text-primary-2);
+    color: var(--text-primary);
+
+    &:hover {
+        color: var(--text-primary);
+    }
+}
+
+
+.btn-active {
+    background: var(--on-background-1);
+    border: 1px solid var(--on-background-1);
+    color: var(--on-text-primary-2);
+
+    &:hover {
+        color: var(--on-text-primary-2);
+    }
+}
+
+.btn-complete {
+    border-radius: 10px;
+    background: var(--color-sos);
+    border: 1px solid var(--color-sos);
+    color: var(--on-text-primary-2);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 20px;
+    height: auto;
+    width: 100%;
+
+    &:hover {
+        color: var(--on-text-primary-2);
+    }
+}
+
+.btn-back {
+    width: 40px;
+    height: 40px;
+    background: var(--on-text-primary-2);
+    border: 1px solid var(--on-text-primary-2);
+    color: var(--on-text-primary);
+    padding: 0;
+
+    &:hover {
+        color: var(--on-text-primary);
+    }
+}
+
+
+.btn-sos {
+    background: var(--color-sos);
+    border: 1px solid var(--color-sos);
+    color: var(--on-text-primary-2);
+
+    &:hover {
+        color: var(--on-text-primary-2);
+    }
+
+    box-shadow: none;
+}
+
+.btn-safety {
+    background: var(--color-safety);
+    border: 1px solid var(--color-safety);
+    color: var(--text-primary);
+    box-shadow: none;
+}
+
+.btn-mental-health {
+    background: var(--color-mental-health);
+    border: 1px solid var(--color-mental-health);
+    color: var(--text-primary);
+    box-shadow: none;
+}
+
+.btn-secondary {
+    width: 133px;
+    height: 56px;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    color: var(--on-text-primary-2);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px auto;
+    border-radius: 12px;
+
+    &:hover {
+        background-color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
+    }
+}
+
+.btn-success {
+    width: 133px;
+    height: 56px;
+    background-color: var(--color-success);
+    border: 1px solid var(--color-success);
+    color: var(--on-text-primary-2);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px auto;
+    border-radius: 12px;
+
+    &:hover {
+        background-color: var(--color-success);
+        border: 1px solid var(--color-success);
+    }
+}
+
+.btn-close {
+    background: transparent;
+    color: var(--text-primary);
+    width: 21px;
+    height: 21px;
+    padding: 5px;
+
+    &:hover {
+        opacity: 1 !important;
+    }
+}
+
+.btn-remove {
+    height: 34px;
+    background: var(--on-text-primary-2);
+    border: 1px solid var(--color-border);
+    color: var(--color-sos);
+
+    &:hover {
+        color: var(--color-sos);
+    }
+}
+
+.btn-edit {
+    height: 27px;
+    background: var(--on-text-primary-2);
+    border: 1px solid #E9E7EC;
+    color: var(--color-sos);
+    padding: 2px 11px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    box-shadow: none;
+
+    &:hover {
+        color: var(--color-sos);
+    }
+}
+
+.btn-upload {
+    height: 30px;
+    background: var(--on-text-primary-2);
+    border: 1px solid #E9E7EC;
+    color: var(--color-sos);
+    padding: 2px 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    box-shadow: none;
+
+    &:hover {
+        color: var(--color-sos);
+    }
+
+    i {
+        color: var(--on-text-primary);
+        margin-left: 16px;
+    }
+}

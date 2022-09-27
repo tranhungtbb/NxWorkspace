@@ -1,0 +1,25 @@
+<button class="btn btn-close" mat-dialog-close>
+  <mat-icon>close</mat-icon>
+</button>
+<div mat-dialog-title class="h3">#SOS-02 Assign operator</div>
+
+<div class="dialog-body">
+
+  <div class="p">
+    There is no availability among the operators.
+    Please select an operator to asign this case to.
+  </div>
+
+  <div class="row form-group">
+    <div class="col-sm-12">
+      <ng-select class="ng-select-border-none" [placeholder]="'Select an operator'" [items]="listOperator"
+        bindLabel="text" bindValue="value">
+      </ng-select>
+    </div>
+  </div>
+</div>
+
+<mat-dialog-actions>
+  <button class="btn btn-success" (click)="onSave()">Save</button>
+  <button class="btn btn-secondary" [mat-dialog-close]="true">Cancel</button>
+</mat-dialog-actions>

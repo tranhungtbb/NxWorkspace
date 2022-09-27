@@ -1,0 +1,66 @@
+[
+    {
+        "caseId": "#SOS-02",
+        "category": 1,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Active"
+    },
+    {
+        "caseId": "#SOS-02",
+        "category": 3,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Past"
+    },
+    {
+        "caseId": "#SOS-02",
+        "category": 2,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Past"
+    },
+    {
+        "caseId": "#SOS-02",
+        "category": 2,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Past"
+    },
+    {
+        "caseId": "#SOS-02",
+        "category": 1,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Active"
+    },
+    {
+        "caseId": "#SOS-02",
+        "category": 3,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Past"
+    },
+    {
+        "caseId": "#SOS-02",
+        "category": 1,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Past"
+    },
+    {
+        "caseId": "#SOS-02",
+        "category": 3,
+        "operator": "Alex Ken",
+        "operatorImage": "/src/assets/media/avatars/avatar-1.png",
+        "lastUpdated": "Today 09:55",
+        "type": "Past"
+    }
+]

@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800");
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "./assets/scss/flex";
+@import "./assets/scss/mixin";
+@import "./assets/scss/text";
+@import "./assets/scss/common";
+@import "./assets/scss/button";
+@import "./assets/scss/input";
+@import "./assets/scss/table";
+@import "./assets/scss/card";
+@import "./assets/scss/dialog";
+
+* {
+    font-family: 'Montserrat';
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.d-inline-grid {
+    display: inline-grid !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    border: 1px solid var(--color-border) !important;
+}
+
+.border-none {
+    border: none !important;
+}

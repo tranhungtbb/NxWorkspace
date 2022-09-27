@@ -1,0 +1,44 @@
+<mat-toolbar>
+    <mat-slide-toggle (change)="toggle()" color="primary">{{ themeActive.name }}</mat-slide-toggle>
+    <form>
+      <div class="input-group input-seach">
+        <button mat-icon-button>
+          <mat-icon>search</mat-icon>
+        </button>
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+  
+    </form>
+  
+  
+    <button mat-icon-button class="favorite-icon" [matMenuTriggerFor]="notifications">
+      <mat-icon mat-list-icon svgIcon="icon-bell"></mat-icon>
+    </button>
+    <mat-menu #notifications="matMenu" class="menu-notifications d-block">
+      <div class="p_1 read-all-notification">Read All</div>
+  
+      <div class="list-notification">
+        <div class="d-flex align-items-center item-notification" *ngFor="let i of [1,2,3,4,5,6,7,8,9]">
+          <div mat-card-avatar class="cricle center">
+            <img src="../../../assets/media/icons/checkin.svg" class="" alt="" />
+          </div>
+          <div class="item-center">
+            <p class="p_1 light-height-16">New Follow me Case</p>
+            <p class="notification-content light-height-14">
+              A new Follow me Case is initiated by Jane Hill.
+            </p>
+            <p class="p_1 light-height-16">Today 07:35:00</p>
+          </div>
+  
+          <div class="item-end">
+            <mat-icon class="center">fiber_manual_record</mat-icon>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+    </mat-menu>
+  
+  </mat-toolbar>
+  

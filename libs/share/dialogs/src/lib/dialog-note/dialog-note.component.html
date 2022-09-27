@@ -1,0 +1,24 @@
+<button class="btn btn-close" mat-dialog-close>
+  <mat-icon>close</mat-icon>
+</button>
+<div mat-dialog-title class="h3">#SOS-02 Add note</div>
+
+<div class="dialog-body">
+  <div class="row form-group">
+    <div class="col-sm-12">
+      <input class="form-control" placeholder="Note title" />
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <div class="col-sm-12">
+      <textarea class="form-control" rows="5" placeholder="Enter your note here..."></textarea>
+    </div>
+  </div>
+
+</div>
+
+<mat-dialog-actions>
+  <button class="btn btn-success" (click)="onSave()">Save</button>
+  <button class="btn btn-secondary" [mat-dialog-close]="true">Cancel</button>
+</mat-dialog-actions>

@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "auth-data-access": "libs/auth/data-access",
+    "auth-feature": "libs/auth/feature",
+    "beekin-app": "apps/beekin-app",
+    "beekin-app-e2e": "apps/beekin-app-e2e",
+    "dash-board-data-access": "libs/dash-board/data-access",
+    "dash-board-feature": "libs/dash-board/feature",
+    "dash-board-ui-main": "libs/dash-board/ui/main",
+    "material": "libs/material",
+    "share-app-auth": "libs/share/app-auth",
+    "share-app-config": "libs/share/app-config",
+    "share-custom": "libs/share/custom",
+    "share-data-access": "libs/share/data-access",
+    "share-data-access-beekin-api": "libs/share/data-access/beekin-api",
+    "share-data-access-models": "libs/share/data-access/models",
+    "share-dialogs": "libs/share/dialogs",
+    "share-directives": "libs/share/directives",
+    "share-pipes": "libs/share/pipes",
+    "share-theme": "libs/share/theme",
+    "shell-feature": "libs/shell/feature",
+    "shell-ui-header": "libs/shell/ui/header",
+    "shell-ui-layout": "libs/shell/ui/layout",
+    "shell-ui-menu": "libs/shell/ui/menu",
+    "theme": "libs/theme"
+  }
+}

@@ -1,0 +1,127 @@
+// custome ngxtable
+
+mat-card.mat-card.mat-focus-indicator.card-ngx-table {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-y: visible;
+
+    &.card-ngx-map {
+        margin: 38px 0 70px 0;
+        padding-bottom: 0;
+    }
+
+    datatable-header-cell.datatable-header-cell {
+        height: 35px;
+    }
+
+    datatable-body.datatable-body {
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: var(--on-text-primary-2) !important;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--background) !important;
+            border-radius: 16px;
+        }
+    }
+
+}
+
+
+.datatable-header-cell-template-wrap {
+    span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--on-text-primary);
+    }
+}
+
+datatable-body-cell.datatable-body-cell.ng-star-inserted {
+    padding: 15px 1.2rem !important;
+    align-items: center;
+    display: flex;
+}
+
+// footer
+
+.footer-small {
+    .datatable-footer-inner {
+        padding: 16px 24px 0px 24px !important;
+    }
+}
+
+.footer-medium {
+    .datatable-footer-inner {
+        padding: 60px 24px 24px 24px !important;
+    }
+}
+
+.ngx-datatable .datatable-footer {
+    .ngx-pagination {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .h3 {
+            line-height: 22px;
+            font-weight: 400;
+        }
+
+        .ng-select-container {
+            width: 80px;
+            height: 27px;
+            background: var(--on-text-primary-2);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+
+            .ng-value.ng-star-inserted {
+                color: var(--color-sos);
+            }
+
+            margin: 0 18px;
+        }
+    }
+
+    .datatable-footer-inner {
+        padding: 50px 24px 50px 24px;
+        justify-content: space-between;
+
+    }
+
+}
+
+.ngx-datatable.material .datatable-footer .datatable-pager li {
+    a {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.active {
+        a {
+            background: var(--color-success);
+            color: var(--on-text-primary-2);
+        }
+    }
+}
+
+.ngx-datatable .datatable-footer .datatable-pager {
+    flex: none !important;
+}
+
+.ng-dropdown-panel .scroll-host {
+    z-index: 100000;
+}
+
+// end ngx table

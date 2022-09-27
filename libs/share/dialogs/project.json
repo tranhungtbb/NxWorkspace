@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/share/dialogs/src",
+  "prefix": "beekin-app",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/share/dialogs"],
+      "options": {
+        "project": "libs/share/dialogs/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/share/dialogs/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/share/dialogs/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/share/dialogs"],
+      "options": {
+        "jestConfig": "libs/share/dialogs/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/share/dialogs/**/*.ts",
+          "libs/share/dialogs/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

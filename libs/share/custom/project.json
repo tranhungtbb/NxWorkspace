@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/share/custom/src",
+  "prefix": "beekin-app",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/share/custom"],
+      "options": {
+        "project": "libs/share/custom/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/share/custom/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/share/custom/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/share/custom"],
+      "options": {
+        "jestConfig": "libs/share/custom/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/share/custom/**/*.ts",
+          "libs/share/custom/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
