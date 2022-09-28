@@ -1,0 +1,44 @@
+:host::ng-deep mat-drawer-content.mat-drawer-content {
+    transition: all 1s ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--on-text-primary) !important;
+        border-radius: 16px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: var(--on-text-primary-2) !important;
+    }
+}
+
+:host::ng-deep mat-drawer-content.mat-drawer-content.close {
+    margin-left: 100px !important;
+}
+
+:host::ng-deep mat-drawer-content.mat-drawer-content.opened {
+    margin-left: 282px !important;
+}
+
+
+::ng-deep.mat-drawer-inner-container,
+::ng-deep.mat-drawer-content {
+    overflow-y: scroll;
+}
+
+::ng-deep.mat-drawer-inner-container::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--on-text-primary-2) !important;
+}
+
+::ng-deep.mat-drawer-inner-container::-webkit-scrollbar-thumb {
+    background: var(--background) !important;
+    border-radius: 16px;
+}
+
+.sidenav-content {
+    background: var(--background);
+    padding: 30px 40px;
+    position: relative;
+}

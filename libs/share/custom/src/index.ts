@@ -1,1 +1,1 @@
-export * from './lib/share-custom.module';
+export * from './lib/app-root-overlay-container';

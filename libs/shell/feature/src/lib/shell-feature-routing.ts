@@ -1,6 +1,5 @@
-import { RouterModule, Routes } from '@angular/router';
-import { WebLayoutComponent } from '@beekin-app/shell/ui/layout'
-import { NgModule } from '@angular/core';
+import { Routes } from '@angular/router';
+import { WebLayoutComponent } from '@beekin-app/shell/ui/layout';
 
 export const shellFeatureRoutes: Routes = [
   {
@@ -27,10 +26,3 @@ export const shellFeatureRoutes: Routes = [
       ]
   }
 ];
-
-
-@NgModule({
-  imports: [RouterModule.forChild(shellFeatureRoutes)],
-  exports: [RouterModule]
-})
-export class ShellFeatureRoutingRoutes { }

@@ -1,12 +1,12 @@
-<mat-drawer-container app-theme class="mat-typography" style="height: 100vh;">
+<mat-drawer-container beekinAppTheme class="mat-typography" style="height: 100vh;">
   <mat-drawer #drawer mode="side" class="nav-menu" disableClose="true" opened="true" [@MenuExpansion]="isExpanded">
-    <beekin-app-menu app-theme [isExpanded]="isExpanded" (onExpanded)="expanded($event)"></beekin-app-menu>
+    <beekin-app-menu [isExpanded]="isExpanded" (onExpanded)="expanded($event)"></beekin-app-menu>
   </mat-drawer>
 
   <mat-drawer-content [ngClass]="{ 'opened' : isExpanded , 'close' : !isExpanded}">
     <div class="sidenav-content container-fluid" style="min-height: 100vh;">
       <beekin-app-header></beekin-app-header>
-      <!-- <router-outlet></router-outlet> -->
+      <router-outlet></router-outlet>
     </div>
   </mat-drawer-content>
 </mat-drawer-container>

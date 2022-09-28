@@ -1,0 +1,38 @@
+.statistic-dashboard {
+    display: flex;
+
+    padding-top: 34px;
+
+    :nth-last-child(n+2) {
+        margin-right: 24px;
+    }
+
+    .mat-card.mat-card.mat-focus-indicator {
+        width: 252px;
+        height: 114px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cricle {
+        width: 48px;
+        height: 48px;
+        margin: 0 32px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+
+agm-map {
+    height: 600px;
+}

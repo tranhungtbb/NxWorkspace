@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../../dist/libs/dash-board/ui/case-active-map",
+  "lib": {
+    "entryFile": "src/index.ts"
+  }
+}

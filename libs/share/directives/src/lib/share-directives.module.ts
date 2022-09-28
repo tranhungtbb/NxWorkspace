@@ -7,5 +7,6 @@ import { ThemeDirective } from './directives/theme.directive';
     declarations: [
       ThemeDirective
     ],
+    exports : [ThemeDirective]
   })
   export class ShareDirectivesModule {}

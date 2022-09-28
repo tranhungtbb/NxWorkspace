@@ -10,81 +10,53 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@beekin-app/auth/data-access": [
-        "libs/auth/data-access/src/index.ts"
-      ],
-      "@beekin-app/auth/feature": [
-        "libs/auth/feature/src/index.ts"
-      ],
+      "@beekin-app/auth/data-access": ["libs/auth/data-access/src/index.ts"],
+      "@beekin-app/auth/feature": ["libs/auth/feature/src/index.ts"],
       "@beekin-app/dash-board/data-access": [
         "libs/dash-board/data-access/src/index.ts"
       ],
       "@beekin-app/dash-board/feature": [
         "libs/dash-board/feature/src/index.ts"
       ],
+      "@beekin-app/dash-board/ui/case-active-map": [
+        "libs/dash-board/ui/case-active-map/src/index.ts"
+      ],
+      "@beekin-app/dash-board/ui/case-list": [
+        "libs/dash-board/ui/case-list/src/index.ts"
+      ],
       "@beekin-app/dash-board/ui/main": [
         "libs/dash-board/ui/main/src/index.ts"
       ],
-      "@beekin-app/material": [
-        "libs/material/src/index.ts"
+      "@beekin-app/dash-board/ui/statistic-item": [
+        "libs/dash-board/ui/statistic-item/src/index.ts"
       ],
-      "@beekin-app/share/app-auth": [
-        "libs/share/app-auth/src/index.ts"
-      ],
-      "@beekin-app/share/app-config": [
-        "libs/share/app-config/src/index.ts"
-      ],
-      "@beekin-app/share/custom": [
-        "libs/share/custom/src/index.ts"
-      ],
-      "@beekin-app/share/data-access": [
-        "libs/share/data-access/src/index.ts"
-      ],
+      "@beekin-app/material": ["libs/material/src/index.ts"],
+      "@beekin-app/share/app-auth": ["libs/share/app-auth/src/index.ts"],
+      "@beekin-app/share/app-common": ["libs/share/app-common/src/index.ts"],
+      "@beekin-app/share/app-config": ["libs/share/app-config/src/index.ts"],
+      "@beekin-app/share/custom": ["libs/share/custom/src/index.ts"],
+      "@beekin-app/share/data-access": ["libs/share/data-access/src/index.ts"],
       "@beekin-app/share/data-access/beekin-api": [
         "libs/share/data-access/beekin-api/src/index.ts"
       ],
       "@beekin-app/share/data-access/models": [
         "libs/share/data-access/models/src/index.ts"
       ],
-      "@beekin-app/share/dialogs": [
-        "libs/share/dialogs/src/index.ts"
-      ],
-      "@beekin-app/share/directives": [
-        "libs/share/directives/src/index.ts"
-      ],
-      "@beekin-app/share/pipes": [
-        "libs/share/pipes/src/index.ts"
-      ],
-      "@beekin-app/share/theme": [
-        "libs/share/theme/src/index.ts"
-      ],
-      "@beekin-app/shell/feature": [
-        "libs/shell/feature/src/index.ts"
-      ],
-      "@beekin-app/shell/ui/header": [
-        "libs/shell/ui/header/src/index.ts"
-      ],
-      "@beekin-app/shell/ui/layout": [
-        "libs/shell/ui/layout/src/index.ts"
-      ],
-      "@beekin-app/shell/ui/menu": [
-        "libs/shell/ui/menu/src/index.ts"
-      ],
-      "@beekin-app/theme": [
-        "libs/theme/src/index.ts"
-      ]
+      "@beekin-app/share/dialogs": ["libs/share/dialogs/src/index.ts"],
+      "@beekin-app/share/directives": ["libs/share/directives/src/index.ts"],
+      "@beekin-app/share/pipes": ["libs/share/pipes/src/index.ts"],
+      "@beekin-app/share/theme": ["libs/share/theme/src/index.ts"],
+      "@beekin-app/shell/feature": ["libs/shell/feature/src/index.ts"],
+      "@beekin-app/shell/ui/header": ["libs/shell/ui/header/src/index.ts"],
+      "@beekin-app/shell/ui/layout": ["libs/shell/ui/layout/src/index.ts"],
+      "@beekin-app/shell/ui/menu": ["libs/shell/ui/menu/src/index.ts"],
+      "@beekin-app/theme": ["libs/theme/src/index.ts"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

@@ -1,6 +1,6 @@
 // custome ngxtable
 
-mat-card.mat-card.mat-focus-indicator.card-ngx-table {
+mat-card.mat-card.card-ngx-table {
     padding-left: 0;
     padding-right: 0;
     overflow-y: visible;
@@ -26,6 +26,10 @@ mat-card.mat-card.mat-focus-indicator.card-ngx-table {
         }
     }
 
+}
+
+.ngx-datatable.material{
+    box-shadow: none;
 }
 
 
@@ -91,7 +95,7 @@ datatable-body-cell.datatable-body-cell.ng-star-inserted {
     .datatable-footer-inner {
         padding: 50px 24px 50px 24px;
         justify-content: space-between;
-
+        height: fit-content !important;
     }
 
 }

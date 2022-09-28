@@ -1,0 +1,202 @@
+.border-avatar {
+    border-radius: 50%;
+    border: 2px solid val(--color-sos);
+    width: 56px;
+    height: 56px;
+  
+    img {
+      border-radius: 50%;
+    }
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .menu-header {
+    justify-content: space-between;
+    padding: 30px 25px 0px 25px;
+    position: relative;
+  
+    &.close {
+      padding: 30px 20px 0px 20px;
+  
+      justify-items: center;
+      justify-content: center;
+  
+      .icon {
+        position: fixed;
+        top: 30px;
+        left: 82px;
+        border: 1px solid val(--background);
+        transition: ease all 1s;
+      }
+    }
+  
+    .logo-cricle {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+  }
+  
+  .avatar {
+    padding: 0px 25px;
+  
+    .avatar-infomation {
+      margin-left: 20px;
+    }
+  
+    margin: 30px 0px;
+  
+    &.close {
+      padding: 0px 20px;
+      justify-content: center;
+  
+    }
+  
+  }
+  
+  .mat-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text-primary);
+  }
+  
+  .mat-card-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--on-text-primary);
+  }
+  
+  .mat-expansion-panel-spacing {
+    margin: 0px;
+  }
+  
+  svg {
+    fill: currentColor;
+  }
+  
+  hr {
+    opacity: 0.3;
+    height: 3px;
+    color: val(--background);
+    margin: 0;
+  }
+  
+  // for the mat-expansion indicator to displayed when it is disabled
+  :host::ng-deep span.mat-expansion-indicator {
+    display: none !important;
+  }
+  
+  .mat-accordion .mat-expansion-panel:last-of-type {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  :host::ng-deep .app-nav-accordion {
+    display: block;
+    padding: 20px 25px 30px 25px;
+  
+    &.close {
+      padding: 20px 20px 30px 20px;
+      justify-content: center;
+  
+      .mat-expansion-panel-header,
+      span.mat-list-item-content {
+        width: auto;
+        height: 52px;
+        padding: 14px;
+      }
+  
+      .mat-content,
+      .mat-list-item-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+  
+    }
+  
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .mat-expansion-panel-header,
+    span.mat-list-item-content,
+    mat-icon.mat-icon.notranslate.mat-list-icon.mat-icon-no-color,
+    .mat-list-base {
+      padding: 0;
+    }
+  
+    .mat-expansion-panel-header,
+    span.mat-list-item-content {
+      width: 232px;
+      height: 56px;
+      padding: 14px 19px;
+      border-radius: 8px;
+    }
+  
+    .mat-expansion-panel-header {
+      display: flex;
+      justify-items: center;
+  
+      h4 {
+        margin: 0;
+        padding-left: 16px;
+      }
+    }
+  
+    .mat-expansion-panel-content {
+      .mat-expansion-panel-body {
+        padding: 0 !important;
+        justify-items: center;
+  
+        .mat-list-item-content {
+          display: block;
+          height: 56px;
+        }
+  
+  
+        h4 {
+          margin: 0;
+          padding-left: 16px;
+        }
+  
+        mat-icon.mat-icon {
+          font-size: 12px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  
+  
+  
+    .mat-list-item,
+    .mat-expansion-panel-header {
+      border-radius: 8px;
+  
+      .active,
+      &:hover {
+        background: val(--color-sos) !important;
+        color: var(--on-text-primary-2);
+      }
+    }
+  
+    h4 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }

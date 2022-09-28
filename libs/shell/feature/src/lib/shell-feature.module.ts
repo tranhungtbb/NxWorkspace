@@ -1,34 +1,44 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Route, RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
-// import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-// import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgSelectModule } from '@ng-select/ng-select';
-import { AgmCoreModule } from '@agm/core';
-import { ShellUiMenuModule } from '@beekin-app/shell/ui/menu';
-import { WebLayoutComponent } from '@beekin-app/shell/ui/layout';
-import { HeaderComponent } from '@beekin-app/shell/ui/header';
-
-import { DashBoardFeatureModule } from '@beekin-app/dash-board/feature';
-import { shellFeatureRoutes, ShellFeatureRoutingRoutes } from './shell-feature-routing.module';
+import { NgSelectConfig } from '@ng-select/ng-select';
+import { darkTheme, lightTheme, ThemeModule } from '@beekin-app/theme';
+import { shellFeatureRoutes } from './shell-feature-routing';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { AppRootOverlayContainer } from '@beekin-app/share/custom';
+import { ShareAppCommonModule } from '@beekin-app/share/app-common';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
-    NgSelectModule,
-    ShellUiMenuModule,
-    DashBoardFeatureModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBriVbWgmHEE8CGaEJM6V47Bem3VoYCi0Q',
-      libraries: ['places'],
+    ShareAppCommonModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'light'
     }),
-    RouterModule.forRoot(shellFeatureRoutes),
+    RouterModule.forRoot(shellFeatureRoutes,
+      {
+        scrollPositionRestoration: 'top'
+      }
+    )
   ],
   declarations: [],
-  exports: [CommonModule, RouterModule]
+  providers: [
+    { 
+      provide: OverlayContainer, 
+      useClass: AppRootOverlayContainer 
+    },
+    {
+      provide: NgSelectConfig,
+      useValue: {
+        notFoundText: 'Not found',
+        appendTo: 'body',
+      }
+    }
+  ]
 })
 export class ShellFeatureModule { }
 
