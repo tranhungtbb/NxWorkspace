@@ -5,14 +5,14 @@ import { DashBoardFeatureComponent } from './dash-board-feature.component';
 
 export const dashBoardFeatureRoutes: Routes = [
   {
-    path : '',
-    component : DashBoardFeatureComponent
+    path: '',
+    component: DashBoardFeatureComponent
   }
 ]
 
 @NgModule({
-  declarations : [DashBoardFeatureComponent],
-  imports: [CommonModule, RouterModule],
-  
+  declarations: [DashBoardFeatureComponent],
+  imports: [CommonModule, RouterModule.forChild(dashBoardFeatureRoutes)],
+
 })
-export class DashBoardFeatureModule {}
+export class DashBoardFeatureModule { }

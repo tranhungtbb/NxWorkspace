@@ -3,29 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
-// import { ShellFeatureModule } from '@beekin-app/shell/feature';
-// import { HeaderComponent } from '@beekin-app/shell/ui/header';
-import { DemoComponent } from './demo/demo.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { PortalModule } from '@angular/cdk/portal';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { CdkStepperModule } from '@angular/cdk/stepper';
+import { CdkTableModule } from '@angular/cdk/table';
+import { CdkTreeModule } from '@angular/cdk/tree';
 
-export const shellFeatureRoutes: Routes = [
-  {
-    path : '',
-    component : DemoComponent
-  }
-];
-
-
+import { ShellFeatureModule } from '@beekin-app/shell/feature';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot([{path: 'demo', children: shellFeatureRoutes}]),
+    ShellFeatureModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

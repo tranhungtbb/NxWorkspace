@@ -4,7 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from '@beekin-app/material'
 
 @NgModule({
-  imports: [CommonModule, MaterialModule],
-  declarations: [HeaderComponent],
+    imports: [CommonModule, MaterialModule],
+    declarations: [HeaderComponent],
+    exports: [HeaderComponent]
 })
-export class ShellUiHeaderModule {}
+export class ShellUiHeaderModule { }

@@ -6,5 +6,6 @@ import { MaterialModule } from '@beekin-app/material'
 @NgModule({
   imports: [CommonModule, MaterialModule],
   declarations: [MenuComponent],
+  exports: [MenuComponent]
 })
-export class ShellUiMenuModule {}
+export class ShellUiMenuModule { }

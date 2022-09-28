@@ -18,9 +18,7 @@
           "apps/beekin-app/src/favicon.ico",
           "apps/beekin-app/src/assets"
         ],
-        "styles": [
-          "apps/beekin-app/src/styles.scss"
-        ],
+        "styles": ["apps/beekin-app/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
