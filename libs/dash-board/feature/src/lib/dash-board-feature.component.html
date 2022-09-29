@@ -82,11 +82,10 @@
 
 <mat-card class="card-ngx-table">
   <mat-card-content>
-    <ngx-datatable #table class="material" [rows]="rows" [headerHeight]="50" [columnMode]="'force'" [footerHeight]="300"
+    <ngx-datatable #table class="material fullscreen" [rows]="rows" [headerHeight]="50" [columnMode]="'force'" [footerHeight]="300"
       [scrollbarH]="true" rowHeight="auto" [externalPaging]="true" [count]="page.totalElements"
       [offset]="page.pageNumber" [limit]="page.size" (page)="setPage($event)" [rowClass]="getRowClass">
-      
-      <ngx-datatable-column name="Clients" [width]="100">
+      <ngx-datatable-column name="Clients">
         <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
           <span (click)="sort()">{{ column.name }}</span>
         </ng-template>
@@ -141,7 +140,7 @@
         </ng-template>
       </ngx-datatable-column>
 
-      <ngx-datatable-column name="LastUpdated" [width]="100">
+      <ngx-datatable-column name="LastUpdated">
         <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
           <span (click)="sort()">{{ column.name }}</span>
         </ng-template>
@@ -153,25 +152,12 @@
       <ngx-datatable-footer>
         <ng-template ngx-datatable-footer-template let-rowCount="rowCount" let-pageSize="pageSize"
           let-selectedCount="selectedCount" let-curPage="curPage" let-offset="offset" let-isVisible="isVisible">
-          <div class="h3 font-weight-400">
-            Total : {{ rowCount }} rows
-          </div>
-
-          <div class="ngx-pagination">
-            <div class="h3">Showing</div>
-            <ng-select>
-              <ng-option *ngFor="let item of [10,20,30,50,100]" [value]="item">{{item}}</ng-option>
-            </ng-select>
-            <div class="h3">of all cases</div>
-            <datatable-pager [pagerLeftArrowIcon]="'datatable-icon-left'" [pagerRightArrowIcon]="'datatable-icon-right'"
-              [pagerPreviousIcon]="'datatable-icon-prev'" [pagerNextIcon]="'datatable-icon-skip'" [page]="curPage"
-              [size]="pageSize" [count]="rowCount" [hidden]="!((rowCount / pageSize) > 1)"
-              (change)="table.onFooterPage($event)">
-            </datatable-pager>
-          </div>
-
+          <beekin-app-ngx-footer-custom [offset]="offset" [pageSize]="pageSize"
+            [rowCount]="rowCount" (change)="table.onFooterPage($event)">
+          </beekin-app-ngx-footer-custom>
         </ng-template>
       </ngx-datatable-footer>
+      
     </ngx-datatable>
   </mat-card-content>
 </mat-card>

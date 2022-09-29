@@ -27,10 +27,10 @@ import { ShareAppCommonModule } from '@beekin-app/share/app-common';
   ],
   declarations: [],
   providers: [
-    { 
-      provide: OverlayContainer, 
-      useClass: AppRootOverlayContainer 
-    },
+    // { 
+    //   provide: OverlayContainer, 
+    //   useClass: AppRootOverlayContainer 
+    // },
     {
       provide: NgSelectConfig,
       useValue: {

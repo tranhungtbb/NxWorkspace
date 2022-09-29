@@ -11,7 +11,6 @@ export class DashBoardFeatureComponent implements OnInit {
 
   page: Page = new Page();
   rows = new Array<any>();
-  ColumnMode: any
 
   markers: any = {}
   zoom: number = 15

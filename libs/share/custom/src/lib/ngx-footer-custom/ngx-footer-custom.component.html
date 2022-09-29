@@ -1,0 +1,16 @@
+<div class="d-flex align-items-center justify-content-between">
+    <div class="h3 font-weight-400">
+        Total : {{ rowCount }} rows
+    </div>
+    <div class="ngx-pagination">
+        <div class="h3">Showing</div>
+        <ng-select [(ngModel)]="pageSize" [clearable]="false">
+            <ng-option *ngFor="let item of [10,20,30,50,100]" [value]="item">{{item}}</ng-option>
+        </ng-select>
+        <div class="h3">of all cases</div>
+        <datatable-pager [pagerLeftArrowIcon]="'datatable-icon-left'" [pagerRightArrowIcon]="'datatable-icon-right'"
+            [pagerPreviousIcon]="'datatable-icon-prev'" [pagerNextIcon]="'datatable-icon-skip'" [page]="offset + 1"
+            [size]="pageSize" [count]="rowCount" [hidden]="!((rowCount / pageSize) > 1)" (change)="page.emit($event)">
+        </datatable-pager>
+    </div>
+</div>

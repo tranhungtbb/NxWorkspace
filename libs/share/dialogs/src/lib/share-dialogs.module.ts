@@ -8,5 +8,6 @@ import { DialogViewRepondentsComponent } from './dialog-view-repondents/dialog-v
 @NgModule({
   declarations : [DialogAssignOperatorComponent, DialogClientResponseComponent, DialogNoteComponent, DialogViewRepondentsComponent],
   imports: [CommonModule],
+  exports : [DialogAssignOperatorComponent, DialogClientResponseComponent, DialogNoteComponent, DialogViewRepondentsComponent]
 })
 export class ShareDialogsModule {}
