@@ -1,6 +1,6 @@
 {
   "$schema": "../../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../../dist/libs/dash-board/ui/statistic-item",
+  "dest": "../../../../dist/libs/dash-board/ui/statistic",
   "lib": {
     "entryFile": "src/index.ts"
   }

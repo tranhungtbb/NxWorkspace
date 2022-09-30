@@ -5,6 +5,7 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
+    "exactOptionalPropertyTypes": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
@@ -32,8 +33,8 @@
       "@beekin-app/dash-board/ui/main": [
         "libs/dash-board/ui/main/src/index.ts"
       ],
-      "@beekin-app/dash-board/ui/statistic-item": [
-        "libs/dash-board/ui/statistic-item/src/index.ts"
+      "@beekin-app/dash-board/ui/statistic": [
+        "libs/dash-board/ui/statistic/src/index.ts"
       ],
       "@beekin-app/material": ["libs/material/src/index.ts"],
       "@beekin-app/share/app-auth": ["libs/share/app-auth/src/index.ts"],

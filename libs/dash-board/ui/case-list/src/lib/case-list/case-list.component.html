@@ -1,0 +1,82 @@
+
+<mat-card class="card-ngx-table margin-top-9">
+    <mat-card-content>
+      <ngx-datatable #table class="material fullscreen" [rows]="rows" [headerHeight]="50" [columnMode]="'force'" [footerHeight]="300"
+        [scrollbarH]="true" rowHeight="auto" [externalPaging]="true" [count]="page.totalElements"
+        [offset]="page.pageNumber" [limit]="page.size" (page)="setPage($event)" [rowClass]="getRowClass">
+        <ngx-datatable-column name="Clients">
+          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
+            <span (click)="sort()">{{ column.name }}</span>
+          </ng-template>
+          <ng-template let-value="value" let-row="row" ngx-datatable-cell-template>
+            <div class="block-avatar">
+              <div mat-card-avatar>
+                <img [src]="row?.clientImage" class="" alt="" />
+              </div>
+              <div class="flex-grow-1 d-inline-grid">
+                <div class="h3">{{ value }}</div>
+                <p class="p_1">CC Manager</p>
+              </div>
+            </div>
+          </ng-template>
+        </ngx-datatable-column>
+  
+        <ngx-datatable-column name="caseID">
+          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
+            <span (click)="sort()">{{ column.name }}</span>
+          </ng-template>
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <p>{{ value }}</p>
+          </ng-template>
+        </ngx-datatable-column>
+  
+        <ngx-datatable-column name="Category">
+          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
+            <span (click)="sort()">{{ column.name }}</span>
+          </ng-template>
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <button *ngIf="value == 1" class="btn btn-sos">SOS</button>
+            <button *ngIf="value == 2" class="btn btn-safety">Follow me</button>
+            <button *ngIf="value == 3" class="btn btn-mental-health">Check-in</button>
+          </ng-template>
+        </ngx-datatable-column>
+  
+        <ngx-datatable-column name="Operator">
+          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
+            <span (click)="sort()">{{ column.name }}</span>
+          </ng-template>
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+  
+            <div class="block-avatar-small">
+              <div mat-card-avatar>
+                <img src="assets/media/avatars/avatar-3.png" class="" alt="" />
+              </div>
+              <div class="flex-grow-1 d-inline-grid">
+                <div class="h6">{{ value }}</div>
+              </div>
+            </div>
+  
+          </ng-template>
+        </ngx-datatable-column>
+  
+        <ngx-datatable-column name="LastUpdated">
+          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template>
+            <span (click)="sort()">{{ column.name }}</span>
+          </ng-template>
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <p>{{ value }}</p>
+          </ng-template>
+        </ngx-datatable-column>
+  
+        <ngx-datatable-footer>
+          <ng-template ngx-datatable-footer-template let-rowCount="rowCount" let-pageSize="pageSize"
+            let-selectedCount="selectedCount" let-curPage="curPage" let-offset="offset" let-isVisible="isVisible">
+            <beekin-app-ngx-footer-custom [offset]="offset" [pageSize]="pageSize"
+              [rowCount]="rowCount" (change)="table.onFooterPage($event)">
+            </beekin-app-ngx-footer-custom>
+          </ng-template>
+        </ngx-datatable-footer>
+        
+      </ngx-datatable>
+    </mat-card-content>
+  </mat-card>

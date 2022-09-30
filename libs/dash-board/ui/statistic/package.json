@@ -1,5 +1,5 @@
 {
-  "name": "@beekin-app/dash-board/ui/statistic-item",
+  "name": "@beekin-app/dash-board/ui/statistic",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^14.2.0",

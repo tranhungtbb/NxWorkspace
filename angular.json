@@ -11,7 +11,7 @@
     "dash-board-ui-case-active-map": "libs/dash-board/ui/case-active-map",
     "dash-board-ui-case-list": "libs/dash-board/ui/case-list",
     "dash-board-ui-main": "libs/dash-board/ui/main",
-    "dash-board-ui-statistic-item": "libs/dash-board/ui/statistic-item",
+    "dash-board-ui-statistic": "libs/dash-board/ui/statistic",
     "material": "libs/material",
     "share-app-auth": "libs/share/app-auth",
     "share-app-common": "libs/share/app-common",

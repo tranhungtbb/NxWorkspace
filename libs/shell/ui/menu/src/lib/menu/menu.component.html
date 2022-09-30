@@ -36,13 +36,13 @@
         <h4 mat-line *ngIf="isExpanded">Dashboard</h4>
       </mat-expansion-panel-header>
       <mat-nav-list>
-        <mat-list-item>
+        <mat-list-item routerLink="['/map-only']">
           <div class="d-flex">
             <mat-icon>fiber_manual_record</mat-icon>
             <h4 mat-line *ngIf="isExpanded">Map only view</h4>
           </div>
         </mat-list-item>
-        <mat-list-item>
+        <mat-list-item routerLink="['/list-of-case']">
           <div class="d-flex">
             <mat-icon>fiber_manual_record</mat-icon>
             <h4 mat-line *ngIf="isExpanded">List of cases</h4>

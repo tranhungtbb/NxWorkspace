@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'dash-board-ui-statistic-item',
+  displayName: 'dash-board-ui-statistic',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../../coverage/libs/dash-board/ui/statistic-item',
+  coverageDirectory: '../../../../coverage/libs/dash-board/ui/statistic',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

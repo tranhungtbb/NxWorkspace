@@ -1,30 +1,30 @@
 {
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/dash-board/ui/statistic-item/src",
+  "sourceRoot": "libs/dash-board/ui/statistic/src",
   "prefix": "beekin-app",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/dash-board/ui/statistic-item"],
+      "outputs": ["dist/libs/dash-board/ui/statistic"],
       "options": {
-        "project": "libs/dash-board/ui/statistic-item/ng-package.json"
+        "project": "libs/dash-board/ui/statistic/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/dash-board/ui/statistic-item/tsconfig.lib.prod.json"
+          "tsConfig": "libs/dash-board/ui/statistic/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/dash-board/ui/statistic-item/tsconfig.lib.json"
+          "tsConfig": "libs/dash-board/ui/statistic/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/dash-board/ui/statistic-item"],
+      "outputs": ["coverage/libs/dash-board/ui/statistic"],
       "options": {
-        "jestConfig": "libs/dash-board/ui/statistic-item/jest.config.ts",
+        "jestConfig": "libs/dash-board/ui/statistic/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -32,8 +32,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/dash-board/ui/statistic-item/**/*.ts",
-          "libs/dash-board/ui/statistic-item/**/*.html"
+          "libs/dash-board/ui/statistic/**/*.ts",
+          "libs/dash-board/ui/statistic/**/*.html"
         ]
       }
     }
